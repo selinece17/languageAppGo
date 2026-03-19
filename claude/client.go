@@ -1,9 +1,6 @@
 // Package claude wraps the Google Gemini HTTP API so the rest of the app
 // doesn't have to think about JSON marshalling, headers, or error shapes.
 //
-// The package is still named "claude" so every other file that imports it
-// doesn't need updating — only the underlying transport changed to Gemini.
-//
 // Reference: https://ai.google.dev/api/generate-content
 package claude
 
