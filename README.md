@@ -88,6 +88,10 @@ The app needs to talk to Google's Gemini AI to generate questions and grade your
 
 > **Keep your key private.** Don't post it publicly on GitHub or share it with people you don't trust. Anyone with your key can use your free quota.
 
+### Which model should I use?
+
+This app is built and tested with **`gemini-2.5-flash`** — that's the recommended free model. When you create your API key in Google AI Studio, make sure the project has access to Gemini 2.5 Flash. You don't need to select a model anywhere in the app — it's already configured to use it.
+
 ### Is it really free?
 
 Yes. Google's free tier for Gemini allows a generous number of requests per day — far more than you'd ever use just practising vocabulary. You do not need to enter a credit card.
@@ -179,17 +183,6 @@ A window titled **"🌍 AI Language Tutor"** should appear on your screen.
 
 > **What does `go run .` do?** It tells Go to compile (translate your source code into something the computer can execute) and immediately run the program. The `.` means "use the code in the current folder."
 
-### Building a standalone executable (optional)
-
-If you want a double-clickable `.exe` or app file that you can run without a terminal, you can build one:
-
-```
-go build -o languageapp
-```
-
-This creates a file called `languageapp` (or `languageapp.exe` on Windows) in the current folder. Double-click it to launch the app any time, no terminal needed.
-
----
 
 ## How to Use the App
 
@@ -215,6 +208,8 @@ This is your control centre. Here you'll:
 Paste the Gemini API key you copied in Step 2 into the **"Google Gemini API Key"** field and click **"Save Key"**.
 
 You only need to do this once — the key is saved to your computer and will be there next time you open the app.
+
+> **Model note:** This app uses **`gemini-2.5-flash`**, which is free. Make sure your API key was created in [Google AI Studio](https://aistudio.google.com/) (not Google Cloud Console) to ensure free tier access.
 
 #### 2. Choose a Language
 Click the **Language** dropdown and pick what you want to practise. Options include:
