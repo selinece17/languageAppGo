@@ -423,47 +423,8 @@ You probably need the system libraries from Step 4. Run the `apt-get` or `dnf` i
 ### "a profile named 'X' already exists"
 
 Profile names must be unique. Either pick a different name or delete the existing profile first from the profile screen.
+------------------------------------------------------------------------
 
----
+# License
 
-## Frequently Asked Questions
-
-**Q: Does the app send my translations to Google?**
-
-Yes — when you submit an answer, your translation and the original English sentence are sent to Google's Gemini API so it can grade the response. This is the same as using any AI chat tool. Don't practise with sensitive personal information.
-
----
-
-**Q: Will I get charged money?**
-
-No, as long as you're using the free tier of Google AI Studio. The free tier has a daily limit on requests, but it's high enough that you'd have to practise for many hours in a single day to hit it. If you somehow do hit the limit, the app will show an API error and you just wait until the next day.
-
----
-
-**Q: Can I use this offline?**
-
-No. The app needs an internet connection to contact the Gemini API for generating questions and grading answers. Your saved progress and vocabulary list are stored locally, so you can still view those offline.
-
----
-
-**Q: I got a question wrong but the AI seems wrong too — can I dispute it?**
-
-The AI is very good but not perfect, especially for languages with flexible grammar (like Japanese or German, where word order can vary). If you think your answer was correct, just move on — your overall accuracy will still reflect your real ability over many questions.
-
----
-
-**Q: How do I add more languages?**
-
-Open `models/models.go` and add a new entry to the `SupportedLanguages` slice following the same format as the existing ones. Restart the app and the new language will appear in the dropdown. The AI supports virtually any language — it just needs to be listed here.
-
----
-
-**Q: Can I run this on a phone or tablet?**
-
-Not currently. Fyne (the GUI library used) can technically build mobile apps, but this project is set up for desktop only. Running it would require additional build configuration.
-
----
-
-**Q: Something broke and I want to start completely fresh — how?**
-
-Delete the app's data folder (see [Where Your Data Is Saved](#where-your-data-is-saved)) and relaunch. This clears all profiles, progress, and your saved API key. You'll start as if it's the first launch.
+This project is intended for educational purposes.
