@@ -1,0 +1,154 @@
+# ── Compiled binaries ─────────────────────────────────────────────────────────
+# These are built from your source code and don't belong in version control.
+# Anyone who clones the repo can just run `go build` to create their own.
+languageapp
+languageapp.exe
+languageapp-windows.exe
+languageapp-linux
+languageapp-darwin
+*.exe
+*.out
+*.app
+
+# ── Go build cache / module cache ─────────────────────────────────────────────
+# Go manages these automatically. They can be huge and are fully reproducible.
+vendor/
+
+# ── User data and saved settings ──────────────────────────────────────────────
+# This is where the app saves API keys, profiles, and progress on each machine.
+# You never want to commit someone's API key to GitHub — that's a security risk.
+# Each user's computer will generate its own copy of these files when they run the app.
+settings.json
+profiles.json
+vocab.json
+progress.json
+
+# Catch the whole data directory just in case
+languageapp/
+~/.config/languageapp/
+
+# ── API keys and secrets ───────────────────────────────────────────────────────
+# If you ever put a key in a .env file or similar, this makes sure it stays local.
+.env
+.env.local
+.env.*.local
+*.key
+secrets.json
+config.local.json
+
+# ── OS-generated junk files ───────────────────────────────────────────────────
+# These are created automatically by Windows/macOS/Linux and are meaningless
+# to anyone else who clones your repo.
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ── Editor and IDE config ──────────────────────────────────────────────────────
+# These are personal to your setup. Other developers use different editors
+# and don't need (or want) your editor's settings cluttering the repo.
+
+# VS Code
+.vscode/
+
+# JetBrains (GoLand, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Neovim
+*.swp
+*.swo
+Session.vim
+
+# Emacs
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-workspace
+
+# ── Test output and coverage reports ──────────────────────────────────────────
+# Generated files from running `go test`. Not useful to commit.
+*.test
+*.prof
+coverage.out
+coverage.html
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Fyne packaging output ─────────────────────────────────────────────────────
+# If you ever use `fyne package` to bundle the app for distribution,
+# it drops these folders. They're large and rebuilt on demand.
+dist/
+fyne-cross/
+
+# ===============================
+# Go build files
+# ===============================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go build directories
+bin/
+dist/
+build/
+
+# Go coverage files
+coverage.out
+
+# Dependency directories (if used)
+vendor/
+
+# ===============================
+# IDE files
+# ===============================
+
+# JetBrains IDEs (GoLand, IntelliJ)
+.idea/
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# Environment files
+# ===============================
+.env
+
+# ===============================
+# Temporary files
+# ===============================
+tmp/
+temp/
+*.tmp
